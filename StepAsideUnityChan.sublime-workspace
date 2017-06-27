@@ -1,0 +1,366 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fin",
+				"fingerIdTouchLeft\tint"
+			],
+			[
+				"Touch",
+				"TouchPhase\tTouchPhase"
+			],
+			[
+				"Tou",
+				"TouchPhase\tTouchPhase"
+			],
+			[
+				"ga",
+				"gameoverText\tGameObject"
+			],
+			[
+				"Set",
+				"SetColor(string name, Color value)\tvoid"
+			],
+			[
+				"Mat",
+				"Mathf\tMathf"
+			],
+			[
+				"bl",
+				"blue\tColor { get; }"
+			],
+			[
+				"de",
+				"defaultColor\tColor"
+			],
+			[
+				"Co",
+				"Collision\tCollision"
+			],
+			[
+				"Join",
+				"JointSpring\tJointSpring"
+			],
+			[
+				"Lef",
+				"LeftArrow\tKeyCode"
+			],
+			[
+				"Get",
+				"GetKeyUp(string name)\tbool"
+			],
+			[
+				"Ke",
+				"KeyCode\tKeyCode"
+			],
+			[
+				"G",
+				"GetKeyDown(string name)\tbool"
+			],
+			[
+				"GetC",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"mag",
+				"magSpeed\tfloat"
+			],
+			[
+				"Ma",
+				"Mathf\tMathf"
+			],
+			[
+				"Vec",
+				"Vector3()\tVector3()"
+			],
+			[
+				"loca",
+				"localScale\tVector3 { get; set; }"
+			],
+			[
+				"R",
+				"Rotate(Vector3 eulerAngles)\tvoid"
+			],
+			[
+				"l",
+				"Log(object message)\tvoid"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/hinaome/localrepos/techacacemy_unity/PinBall/PinBall.sublime-project",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "StepAsideUnityChan.sublime-project",
+			"settings":
+			{
+				"buffer_size": 193,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 92.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hinaome/localrepos/techacacemy_unity/StepAsideUnityChan/Assets"
+	],
+	"file_history":
+	[
+		"/Users/hinaome/localrepos/techacacemy_unity/PinBall/PinBall.sublime-project",
+		"/Users/hinaome/localrepos/techacacemy_unity/PinBall/.gitignore",
+		"/Users/hinaome/localrepos/techacacemy_unity/ScriptTest/ScriptTest.sublime-project",
+		"/Users/hinaome/Library/Application Support/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
+		"/Users/hinaome/Library/Application Support/Sublime Text 3/Packages/User/OmniSharpSublime.sublime-settings",
+		"/Users/hinaome/Library/Application Support/Sublime Text 3/Packages/OmniSharp/PrebuiltOmniSharpServer/config.json",
+		"/Users/hinaome/localrepos/techacacemy_unity/ScriptTest/Assets/Test.cs",
+		"/Users/hinaome/Library/Application Support/Sublime Text 3/Packages/User/C#.sublime-settings",
+		"/Users/hinaome/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/hinaome/localrepos/techacacemy_unity/ScriptTest/Assembly-CSharp.csproj",
+		"/Users/hinaome/localrepos/techacacemy_unity/ScriptTest/ScriptTest.sln",
+		"/Users/hinaome/localrepos/techacacemy_unity/ScriptTest/scripttest.sublime-project"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"totalScore",
+			"LargeCloud",
+			"OnCollisionEnter",
+			"myHingeJoint",
+			"omnisharp_onsave_codecheck"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"score"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/hinaome/localrepos/techacacemy_unity/PinBall/PinBall.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "StepAsideUnityChan.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 203.0
+	},
+	"pinned_build_system": "",
+	"project": "StepAsideUnityChan.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
