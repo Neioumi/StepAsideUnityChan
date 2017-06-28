@@ -17,7 +17,7 @@ public class UnityChanController : MonoBehaviour {
 
 		// 走るアニメーションを開始
 		// UnityChanLocomotionsの設定では、下記引数が0.8以上の時に走る
-		this.myAnimator.SetFloat ("Speed", 1);
+		this.myAnimator.SetFloat("Speed", 1);
 
 		// Rigidbodyコンポーネントを取得
 		this.myRigidbody = GetComponent<Rigidbody>();
