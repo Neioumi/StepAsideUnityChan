@@ -91,23 +91,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/hinaome/localrepos/techacacemy_unity/PinBall/PinBall.sublime-project",
-			"settings":
-			{
-				"buffer_size": 182,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "StepAsideUnityChan.sublime-project",
-			"settings":
-			{
-				"buffer_size": 193,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -158,11 +141,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/hinaome/localrepos/techacacemy_unity/StepAsideUnityChan/Assets"
+		"/Users/hinaome/localrepos/techacacemy_unity/StepAsideUnityChan/Assets",
+		"/Users/hinaome/localrepos/techacacemy_unity/StepAsideUnityChan/Assets/Scripts"
 	],
 	"file_history":
 	[
+		"/Users/hinaome/localrepos/techacacemy_unity/StepAsideUnityChan/Assets/Scripts/UnityChanController.cs",
 		"/Users/hinaome/localrepos/techacacemy_unity/PinBall/PinBall.sublime-project",
+		"/Users/hinaome/localrepos/techacacemy_unity/StepAsideUnityChan/StepAsideUnityChan.sublime-project",
 		"/Users/hinaome/localrepos/techacacemy_unity/PinBall/.gitignore",
 		"/Users/hinaome/localrepos/techacacemy_unity/ScriptTest/ScriptTest.sublime-project",
 		"/Users/hinaome/Library/Application Support/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
@@ -214,66 +200,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/hinaome/localrepos/techacacemy_unity/PinBall/PinBall.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								139,
-								24
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "StepAsideUnityChan.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								139,
-								139
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -308,6 +236,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
