@@ -26,6 +26,9 @@ public class UnityChanController : MonoBehaviour {
 	private GameObject scoreText;
 	// 得点
 	private int score = 0;
+	// 左右ボタン押下の判定
+	private bool isLButtonDown = false;
+	private bool isRButtonDown = false;
 
 	// Use this for initialization
 	void Start () {
@@ -59,9 +62,9 @@ public class UnityChanController : MonoBehaviour {
 		this.myRigidbody.AddForce(this.transform.forward * this.forwardForce);
 
 		// Unityちゃんを矢印キーorボタンで左右に移動させる
-		if (Input.GetKey(KeyCode.LeftArrow) && -this.movableRange < this.transform.position.x) {
+		if ((Input.GetKey(KeyCode.LeftArrow) || this.isLButtonDown) && -this.movableRange < this.transform.position.x) {
 			this.myRigidbody.AddForce(-this.turnForce, 0, 0);
-		} else if (Input.GetKey(KeyCode.RightArrow) && this.transform.position.x < this.movableRange) {
+		} else if ((Input.GetKey(KeyCode.RightArrow) || this.isRButtonDown) && this.transform.position.x < this.movableRange) {
 			this.myRigidbody.AddForce(this.turnForce, 0, 0);
 		}
 
@@ -102,5 +105,29 @@ public class UnityChanController : MonoBehaviour {
 			Destroy(other.gameObject);
 		}
 
+	}
+
+	// ジャンプボタンを押下時
+	public void GetMyJumpButtonDown() {
+		if (this.transform.position.y < 0.5f) {
+			this.myAnimator.SetBool("Jump", true);
+			this.myRigidbody.AddForce(this.transform.up * this.upForce);
+		}
+	}
+
+	// 左ボタン
+	public void GetMyLeftButtonDown() {
+		this.isLButtonDown = true;
+	}
+	public void GetMyLeftButtonUp() {
+		this.isLButtonDown = false;
+	}
+
+	// 右ボタン
+	public void GetMyRigheButtonDown() {
+		this.isRButtonDown = true;
+	}
+	public void GetMyRigheButtonUp() {
+		this.isRButtonDown = false;
 	}
 }
