@@ -82,7 +82,7 @@ public class UnityChanController : MonoBehaviour {
 	// 自分のColliderが他のColliderと接触した時に呼ばれる（どちらかがTriggerモードの必要あり）
 	void OnTriggerEnter(Collider other) {
 		// 障害物に衝突した場合
-		if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "TrafficCone") {
+		if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "TrafficConeTag") {
 			this.isEnd = true;
 			this.stateText.GetComponent<Text>().text = "GAME OVER";
 		}
