@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UnityChanController : MonoBehaviour {
 	// アニメーションのためのコンポーネントを入れる
@@ -15,6 +16,12 @@ public class UnityChanController : MonoBehaviour {
 	private float upForce = 500.0f;
 	// 左右移動できる範囲
 	private float movableRange = 3.4f;
+	// 動きを減速させる係数
+	private float coefficient = 0.95f;
+	// ゲーム終了の判定
+	private bool isEnd = false;
+	// ゲーム終了時のテキスト
+	private GameObject stateText;
 
 	// Use this for initialization
 	void Start () {
@@ -27,10 +34,20 @@ public class UnityChanController : MonoBehaviour {
 
 		// Rigidbodyコンポーネントを取得
 		this.myRigidbody = GetComponent<Rigidbody>();
+
+		// シーン中のstateTextオブジェクトを取得
+		this.stateText = GameObject.Find("GameResultText");
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		// ゲーム終了ならUnityちゃんの動きを減衰する
+		if (this.isEnd) {
+			this.forwardForce *= this.coefficient;
+			this.turnForce *= this.coefficient;
+			this.upForce *= this.coefficient;
+			this.myAnimator.speed *= this.coefficient;
+		}
 		// Unityちゃんに前方向の力を加える
 		this.myRigidbody.AddForce(this.transform.forward * this.forwardForce);
 
@@ -50,5 +67,29 @@ public class UnityChanController : MonoBehaviour {
 			this.myAnimator.SetBool("Jump", true);
 			this.myRigidbody.AddForce(this.transform.up * this.upForce);
 		}
+	}
+
+	// 自分のColliderが他のColliderと接触した時に呼ばれる（どちらかがTriggerモードの必要あり）
+	void OnTriggerEnter(Collider other) {
+		// 障害物に衝突した場合
+		if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "TrafficCone") {
+			this.isEnd = true;
+			this.stateText.GetComponent<Text>().text = "GAME OVER";
+		}
+		
+		// ゴールに到達した場合
+		if (other.gameObject.tag == "GoalTag") {
+			this.isEnd = true;
+			this.stateText.GetComponent<Text>().text = "CLEAR!!";
+		}
+
+		// コインに衝突した場合
+		if (other.gameObject.tag == "CoinTag") {
+			// パーティクルを再生
+			GetComponent<ParticleSystem>().Play();
+			// 接触したコインのオブジェクトを破棄
+			Destroy(other.gameObject);
+		}
+
 	}
 }
