@@ -10,12 +10,13 @@ public class ItemDestroyer : MonoBehaviour {
 	// デバッグ用のテキスト
 	private GameObject debugText;
 
+	// カメラから映らなくなるぐらいの距離
+	private float margin = 4.0f;
+
 	// Use this for initialization
 	void Start () {
 		// Unityちゃんのオブジェクトを取得
 		this.unitychan = GameObject.Find("unitychan");
-		// Unityちゃんの位置
-		// this.unitychanPos = unitychan.transform.position.z;
 		// シーン中のdebugTextオブジェクトを取得
 		debugText = GameObject.Find("DebugText");
 		
@@ -28,6 +29,10 @@ public class ItemDestroyer : MonoBehaviour {
 		unitychanPos = unitychan.transform.position.z;
 		// Unityちゃんの位置を画面内にテキストで表示
 		debugText.GetComponent<Text>().text = "unitychanPos" + unitychanPos;
+		// 各オブジェクトの位置が、Unityちゃんの後ろ、カメラに映らない位置になったら破棄
+		if (this.transform.position.z < unitychanPos - margin) {
+			Destroy(this.gameObject);
+		}
 	}
 
 	// レンダラーがカメラから見えなくなった時に呼び出されるので、
